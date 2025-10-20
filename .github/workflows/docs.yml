@@ -29,7 +29,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Generate docs
-        run: cargo doc --no-deps --document-private-items
+        run: cargo doc --no-deps --document-private-items --workspace
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
